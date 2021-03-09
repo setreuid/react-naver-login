@@ -49,7 +49,7 @@ const initLoginButton = (props: IProps) => {
   } else {
     naverLogin.getLoginStatus((status: any) => {
       if (status) {
-        window.opener.naver.successCallback(naverLogin.user);
+        window.opener.naver.successCallback(naverLogin);
       } else {
         window.opener.failureCallback();
       }
