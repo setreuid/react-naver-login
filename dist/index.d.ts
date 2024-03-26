@@ -12,7 +12,7 @@ export interface NaverUser {
 interface IProps {
     clientId: string;
     callbackUrl: string;
-    render: (props: any) => React.ComponentElement<any, any> | Element | JSX.Element;
+    render: (props: any) => React.ComponentElement<any, any> | JSX.Element;
     onSuccess: (result: NaverUser) => void;
     onFailure: () => void;
 }
@@ -20,6 +20,6 @@ interface IState {
 }
 declare class LoginNaver extends React.Component<IProps, IState> {
     componentDidMount(): void;
-    render(): React.ComponentElement<any, any> | Element | JSX.Element;
+    render(): React.ComponentElement<any, any> | JSX.Element;
 }
 export default LoginNaver;
